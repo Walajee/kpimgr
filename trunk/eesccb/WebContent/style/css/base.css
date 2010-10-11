@@ -1,0 +1,119 @@
+#outer {
+ text-align:left;
+ border:0px;
+ margin:auto;
+ }
+ 
+#hdr {
+ 	background-color: #d0e6f8;
+ 	padding:5px;
+  	padding-left:15px;
+ }
+ 
+.bigTitle {
+	font-size:14px;
+ 	font-weight:bold;
+ 	color:#524A41;
+}
+
+.toolbartab{
+	padding-left:50px;
+}
+
+#toolbar {
+ 	padding-top:6px;
+ 	height:38px;
+ 	background:url("../images/toolbar-bg.jpg") repeat-x scroll 0 0 transparent;	
+ }
+
+.tabs-nav {
+list-style:none outside none;
+margin:0;
+padding:0 0 0 4px;
+}
+.tabs-nav:after {
+clear:both;
+content:" ";
+display:block;
+}
+.tabs-nav li {
+float:left;
+margin:1px 0 0 5px;
+min-width:84px;
+}
+.tabs-nav a, .tabs-nav a span {
+background:url("../images/tab.png") no-repeat scroll 0 0 transparent;
+display:block;
+padding:0 10px;
+}
+.tabs-nav a {
+color:#27537A;
+font-size:12px;
+font-weight:bold;
+line-height:1.2;
+padding-left:0;
+position:relative;
+text-align:center;
+text-decoration:none;
+top:1px;
+white-space:nowrap;
+z-index:2;
+}
+.tabs-nav .tabs-selected a {
+color:#000000;
+}
+.tabs-nav .tabs-selected a, .tabs-nav a:hover, .tabs-nav a:focus, .tabs-nav a:active {
+background-position:100% -150px;
+outline:0 none;
+}
+.tabs-nav a, .tabs-nav .tabs-disabled a:hover, .tabs-nav .tabs-disabled a:focus, .tabs-nav .tabs-disabled a:active {
+background-position:100% -100px;
+}
+.tabs-nav a span {
+height:18px;
+min-height:18px;
+min-width:64px;
+padding-right:0;
+padding-top:6px;
+width:64px;
+}
+* > .tabs-nav a span {
+height:auto;
+width:auto;
+}
+.tabs-nav .tabs-selected a span {
+padding-top:7px;
+}
+.tabs-nav .tabs-selected a span, .tabs-nav a:hover span, .tabs-nav a:focus span, .tabs-nav a:active span {
+background-position:0 -50px;
+}
+.tabs-nav a span, .tabs-nav .tabs-disabled a:hover span, .tabs-nav .tabs-disabled a:focus span, .tabs-nav .tabs-disabled a:active span {
+background-position:0 0;
+}
+.tabs-nav .tabs-selected a:link, .tabs-nav .tabs-selected a:visited, .tabs-nav .tabs-disabled a:link, .tabs-nav .tabs-disabled a:visited {
+cursor:text;
+}
+.tabs-nav a:hover, .tabs-nav a:focus, .tabs-nav a:active {
+cursor:pointer;
+}
+.tabs-nav .tabs-disabled {
+opacity:0.4;
+}
+.tabs-container {
+background:none repeat scroll 0 0 #FFFFFF;
+border-top:1px solid #97A5B0;
+padding:1em 8px;
+}
+.tabs-loading em {
+background:url("loading.gif") no-repeat scroll 0 50% transparent;
+padding:0 0 0 20px;
+}
+
+#mwain {
+	border:1px #999999;
+}
+
+html, body{
+	margin:0px;
+	padding:0px;
+}

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flows xmlns="http://www.si-tech.com.cn"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.si-tech.com.cn form-config-schema.xsd">
+	<!-- 应用申请流程 -->
+	<flow key="mark">
+		<!-- 发起应用开发申请 -->
+		<step key="new">
+			<!-- 拒绝，流程结束  -->
+			<branch key="refuse" go="end"></branch>
+			<!-- 成功，应用开发 -->
+			<branch key="succ" go="mark"></branch>
+		</step>
+		<!-- 应用开发 -->
+		<step key="mark">
+			<!-- 部署申请 -->
+			<branch key="refuse" go="new"></branch>
+			<!-- 放弃开发 -->
+			<branch key="succ" go="end"></branch>
+		</step>
+	</flow>
+</flows>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<digester-rules>
+	<pattern value="flows">
+		<pattern value="flow">
+			<object-create-rule classname="com.focusoft.power.sccb.flow.CoreFlow" />
+			<set-next-rule methodname="addFlow" />
+			<set-properties-rule />
+			<set-properties-rule>
+				<alias attr-name="isReadonly" prop-name="key" />
+			</set-properties-rule>
+			<pattern value="step">
+				<object-create-rule classname="com.focusoft.power.sccb.flow.Step" />
+					<set-next-rule methodname="addStep" />
+				<set-properties-rule />
+				<set-properties-rule>
+					<alias attr-name="isReadonly" prop-name="key" />
+				</set-properties-rule>
+				<pattern value="branch">
+					<object-create-rule classname="com.focusoft.power.sccb.flow.Branch" />
+						<set-next-rule methodname="addBranch" />
+					<set-properties-rule />
+					<set-properties-rule>
+						<alias attr-name="isReadonly" prop-name="key" />
+					</set-properties-rule>
+				</pattern>
+			</pattern>
+		</pattern>
+	</pattern>
+</digester-rules>
