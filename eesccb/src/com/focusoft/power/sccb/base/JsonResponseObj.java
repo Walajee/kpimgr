@@ -20,6 +20,7 @@ public class JsonResponseObj {
 	}
 
 	public String getMessage() {
+		
 		return message;
 	}
 
