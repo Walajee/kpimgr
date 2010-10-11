@@ -13,6 +13,7 @@ public class BaseException extends Exception{
 	 */
 	private Object[] args;
 	
+	
 	/**
 	 * 文本消息
 	 */
